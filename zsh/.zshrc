@@ -1,3 +1,9 @@
+export ANDROID_HOME=$HOME/Android/Sdk
+unset ANDROID_SDK_ROOT
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export PATH=$JAVA_HOME/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 
