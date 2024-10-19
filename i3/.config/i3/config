@@ -3,7 +3,7 @@ set $mod Mod4
 font pango:Meslo LGM Nerd Font 8
 
 exec --no-startup-id picom
-exec --no-startup-id feh --bg-scale ~/dotfiles/backgrounds/nice-blue-background.png
+exec --no-startup-id feh --bg-scale ~/dotfiles/backgrounds/wallpaper_catpuccin.jpg
 
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
@@ -20,6 +20,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+gaps inner 5
+gaps outer 5
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -132,7 +135,7 @@ bindsym $mod+d mode "resize"
 set $rosewater #f5e0dc
 set $flamingo  #f2cdcd
 set $pink      #f5c2e7
-set $mauve     #cba6f7
+set $mauve     #373a61
 set $red       #f38ba8
 set $maroon    #eba0ac
 set $peach     #fab387
@@ -157,9 +160,9 @@ set $mantle    #181825
 set $crust     #11111b
 
 # target                 title     bg    text      indicator    border
-client.focused           $mantle   $mauve $mantle  $rosewater $mauve
-client.focused_inactive  $overlay0 $base  $text    $rosewater $overlay0
-client.unfocused         $overlay0 $base  $text    $rosewater $overlay0
+client.focused           $mantle   $mauve $rosewater  $rosewater $mauve
+client.focused_inactive  $base $base  $text    $rosewater $base
+client.unfocused         $base $base  $text    $rosewater $base
 client.urgent            $peach    $base  $peach   $overlay0  $peach
 client.placeholder       $overlay0 $base  $text    $overlay0  $overlay0
 client.background        $base

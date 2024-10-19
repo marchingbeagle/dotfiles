@@ -5,6 +5,7 @@ export PATH=$ANDROID_HOME/platform-tools:$PATH
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
 
+source <(fzf --zsh) 
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="daveverwer"
