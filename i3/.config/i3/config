@@ -40,7 +40,7 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-
+bindsym $mod+shift+s exec flameshot gui --clipboard --path ~/Pictures
 
 # move focused window
 bindsym $mod+Shift+h move left
